@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Button , Card } from 'react-bootstrap';
 
 
-export default class Newsitem extends Component {
+export default function Newsitem(props) {
    
-    render() {
-        let {title,description,imageUrl,newsUrl,source,author,date}=this.props; 
+    
+        let {title,description,imageUrl,newsUrl,source,author,date}=props; 
         
         return (
    
@@ -23,5 +23,5 @@ export default class Newsitem extends Component {
      </Card>
     
         )
-    }z
+    
 }
