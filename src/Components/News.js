@@ -34,7 +34,7 @@ export default function News(props) {
   }
  useEffect(() => {
    updateNews();
-  });
+  },[]);
  
   
 
